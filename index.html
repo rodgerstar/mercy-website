@@ -7,6 +7,10 @@
             href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
             rel="stylesheet"
     />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css">
     <title>Mercy</title>
 </head>
@@ -112,12 +116,13 @@
 
 <section class="portfolio_container" id="portfolio">
     <div class="portfolio_content">
-      <p class="section_subheader">Portfolio</p>
+        <p class="section_subheader">Portfolio</p>
         <h2 class="section_header">
             My Creative Works Latest <span>Projects</span>
         </h2>
         <p class="section_description">
-            From sleek web applications to dynamic user interface, these highlight my ability to bring unique ideas to life
+            From sleek web applications to dynamic user interface, these highlight my ability to bring unique ideas to
+            life
         </p>
         <div class="portfolio_btn">
             <button class="btn">Show More</button>
@@ -135,7 +140,89 @@
     </div>
 </section>
 
+<section class="section_container review_container" id="review">
+    <p class="section_subheader"> Reviews</p>
+    <h2 class="section_header">
+        Our Customers Say Something <span>About Us</span>
+    </h2>
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="review_card">
+                    <div class="review_ratings">
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                    </div>
+                    <p>
+                        Perfect from Start to Finish
+                        "Smooth experience with excellent results. Couldn't ask for better"
+                    </p>
+                    <div class="review_details">
+                        <img src="images/hero%20image.png" alt="review">
+                        <div>
+                            <h4>John Doe</h4>
+                            <h5>CEO at Internationals</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="review_card">
+                    <div class="review_ratings">
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                    </div>
+                    <p>
+                        Effortless and Enjoyable
+                        "The process was seamless, and the team was fantastic!"
+                    </p>
+                    <div class="review_details">
+                        <img src="images/hero%20image.png" alt="review">
+                        <div>
+                            <h4>emily joe</h4>
+                            <h5>CEO at Internationals</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="review_card">
+                    <div class="review_ratings">
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                        <span><i class="ri-gemini-fill"></i></span>
+                    </div>
+                    <p>
+                        A Game-Changer!
+                        "Completely transformed my expectations. Love it!"
+                    </p>
+                    <div class="review_details">
+                        <img src="images/other%20image.png" alt="review">
+                        <div>
+                            <h4>James john</h4>
+                            <h5>CEO at Internationals</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 <script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

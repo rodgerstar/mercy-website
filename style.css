@@ -363,6 +363,62 @@ nav {
     }
 }
 
+.review_container{
+    padding-bottom: 0;
+}
+
+.review_container .section_header{
+    max-width: 450px;
+}
+
+.swiper{
+    padding-block: 4rem 5rem;
+    width: 100%;
+}
+
+.swiper-slide{
+    max-width: 400px;
+}
+
+.review_card{
+    padding: 1.5rem;
+    max-width: 400px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.09);
+}
+
+.review_ratings{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.review_ratings span{
+    color: goldenrod;
+}
+
+.review_ratings span:last-child {
+    color: var(--extra-light);
+}
+
+.review_card p{
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    line-height: 1.5rem;
+}
+
+.review_details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review_details img{
+    max-width: 50px;
+    border-radius: 100%;
+}
+
 @media (width > 540px) {
     .stats_container {
         flex-direction: row;
