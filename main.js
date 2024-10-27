@@ -15,3 +15,34 @@ navlinks.addEventListener("click", (e) => {
         menuBtnIcon.setAttribute("class", "ri-menu-line");
     }
 });
+
+const ScrollRevealOption = {
+    origin: "bottom",
+    distance: "50px",
+    duration: 1000,
+};
+
+ScrollReveal().reveal(".header_image img",{
+    ...ScrollRevealOption,
+    origin: "right",
+})
+
+ScrollReveal().reveal(".header_content .section_subheader ",{
+    ...ScrollRevealOption,
+    delay: 500,
+})
+
+ScrollReveal().reveal(".header_content h1",{
+    ...ScrollRevealOption,
+    delay: 1000,
+})
+
+ScrollReveal().reveal(".header_content .section_description ",{
+    ...ScrollRevealOption,
+    delay: 1500,
+})
+
+ScrollReveal().reveal(".header_content .header_btn ",{
+    ...ScrollRevealOption,
+    delay: 2000,
+})

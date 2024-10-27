@@ -198,6 +198,142 @@ nav{
     z-index: -1;
 }
 
+.header_content .section_subheader{
+    padding: 6px 15px; /* Adjusts padding to create an oval shape */
+    border: 2px solid black; /* Adds a border */
+    border-radius: 50px;
+    margin-inline: auto;
+}
+
+.header_content h1{
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.25rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.header_content h1 span{
+    color: var(--primary-color);
+}
+
+.header_content .section_description{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.header_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.header_btn a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.header_btn a span{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.header_btn a:hover{
+    color: var(--primary-color);
+}
+
+.stats_container{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.stats_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.stats_card h4{
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.stats_card p{
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.skill_container{
+    display: grid;
+    gap: 2rem;
+}
+
+.skill_content .section_header{
+    margin-bottom: 1rem;
+}
+
+.skill_content .section_description{
+    margin-bottom: 2rem;
+}
+
+.skill_grid{
+    display: grid;
+    gap: 1rem;
+}
+
+.skill_card{
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow:5px 5px 20px  rgba(0, 0, 0, 0.09);
+}
+
+.skill_card span{
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.skill_card h4{
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.skill_card p{
+    color: var(--text-light);
+    line-height: 1.5rem;
+}
+
+@media (width > 540px) {
+    .stats_container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .stats_card{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0;
+    }
+    .stats_divider{
+       height: 75px;
+        width: 2px;
+        background-color: var(--primary-color);
+    }
+}
+
 @media (width > 768px){
     nav{
         position: static;
@@ -272,4 +408,22 @@ nav{
         color: var(--white);
         background-color: var(--primary-color);
     }
+
+    .header_container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .header_container .section_subheader{
+        margin-inline: unset;
+    }
+    .header_content :is(h1, .section_description){
+        text-align: left;
+    }
+    .header_btn{
+        justify-content: flex-start;
+    }
+    .header_image{
+        grid-area: 1/2/2/3;
+    }
+
 }

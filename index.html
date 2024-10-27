@@ -4,55 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
-    rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
+            rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css">
     <title>Mercy</title>
 </head>
 <body>
-    <nav>
-        <div class="nav_header">
-            <div class="nav_logo">
-                <a href="#"><span>Merit</span></a>
-            </div>
-            <div class="nav_menu_btn" id="menu-btn">
-                <i class="ri-menu-line"></i>
-            </div>
+<nav>
+    <div class="nav_header">
+        <div class="nav_logo">
+            <a href="#"><span>Merit</span></a>
         </div>
-        <ul class="nav_links" id="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="images/cv.pdf" download="">Download Cv</a></li>
-        </ul>
-        <div class="nav_btn">
-            <a href="images/cv.pdf" download="">Download Cv</a>
+        <div class="nav_menu_btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
         </div>
-    </nav>
+    </div>
+    <ul class="nav_links" id="nav-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="images/cv.pdf" download="">Download Cv</a></li>
+    </ul>
+    <div class="nav_btn">
+        <a href="images/cv.pdf" download="">Download Cv</a>
+    </div>
+</nav>
 
-    <header class="section_container header_container" id="about">
-        <div class="header_image">
-            <img src="images/other%20image.png" alt="hero">
-        </div>
-        <div class="header_content">
-            <div class="header_content"><p class="section_subheader">Welcome</p>
+<header class="section_container header_container" id="about">
+    <div class="header_image">
+        <img src="images/other%20image.png" alt="hero">
+    </div>
+    <div class="header_content">
+        <div class="header_content"><p class="section_subheader">Welcome</p>
             <h1>I have <span>Creative Designs</span> Experience.</h1>
             <p class="section_description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium aperiam consectetur dolorum ducimus eum illum ipsum itaque laboriosam molestias necessitatibus nobis porro quia quis recusandae suscipit unde ut voluptate?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium aperiam consectetur
+                dolorum ducimus eum illum ipsum itaque laboriosam molestias necessitatibus nobis porro quia quis
+                recusandae suscipit unde ut voluptate?
             </p>
-                <div class="header_btn">
-                    <button class="btn">Contact Me</button>
-                    <a href="#">
-                        View Portfolio
-                        <span><i class="ri-arrow-right-up-line"></i></span>
-                    </a>
-                </div>
+            <div class="header_btn">
+                <button class="btn">Contact Me</button>
+                <a href="#">
+                    View Portfolio
+                    <span><i class="ri-arrow-right-up-line"></i></span>
+                </a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <script src="main.js"></script>
+<section class="section_container stats_container">
+    <div class="stats_card">
+        <h4>80+</h4>
+        <p>Satisfied Clients</p>
+    </div>
+    <div class="stats_divider"></div>
+    <div class="stats_card">
+        <h4>200+</h4>
+        <p>Project Completed</p>
+    </div>
+    <div class="stats_divider"></div>
+    <div class="stats_card">
+        <h4>99+</h4>
+        <p>Reviews Given</p>
+    </div>
+</section>
+
+<section class="section_container skill_container" id="skill">
+    <div class="skill_content">
+        <p class="section_subheader">My Skills</p>
+        <h2 class="section_header">
+            Why Hire Me For Your Next <span>Project?</span>
+        </h2>
+        <p class="section_description">
+            My Commitment to quality, attention to detail and passion for innovation ensure that every project is a
+            success
+        </p>
+        <div class="skill_btn">
+            <button class="btn">Hire Me</button>
+        </div>
+    </div>
+    <div class="skill_grid">
+        <div class="skill_card">
+            <span><i class="ri-pencil-ruler-2-line"></i></span>
+            <h4>Design Prototype</h4>
+            <p>I design high-fidelity prototypes that bring ideas to life, blending functionality with aesthetic appeal.
+                Each prototype is crafted to simulate real user interactions, ensuring seamless transitions, intuitive
+                navigation </p>
+        </div>
+    </div>
+    <div class="skill_grid">
+        <div class="skill_card">
+            <span><i class="ri-pulse-line"></i></span>
+            <h4>Visual Design</h4>
+            <p>With a keen eye for color, typography, and layout, I create cohesive visuals that enhance usability while
+                aligning with strategic goals</p>
+        </div>
+    </div>
+    <div class="skill_grid">
+        <div class="skill_card">
+            <span><i class="ri-graduation-cap-line"></i></span>
+            <h4>UX UI Researcher</h4>
+            <p>By conducting in-depth user research, analyzing feedback, and collaborating with designers and
+                developers, I ensure that every interface is not only visually engaging but also highly functional.</p>
+        </div>
+    </div>
+</section>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="main.js"></script>
 </body>
 </html>
