@@ -72,4 +72,9 @@ portfoliocontent.forEach((item) => {
     const duplicateNode = item.cloneNode(true);
     duplicateNode.setAttribute("aria-hidden", true);
     portfolio.appendChild(duplicateNode);
+});
+
+const swiper = new Swiper(".swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
 })

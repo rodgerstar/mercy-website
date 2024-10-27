@@ -419,6 +419,59 @@ nav {
     border-radius: 100%;
 }
 
+.review_details h4{
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.review_details h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.contact_container{
+    max-width: 600px;
+}
+
+.contact_container .section_subheader{
+    margin-inline: auto;
+}
+
+.contact_container .section_header{
+    margin-bottom: 1rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.contact_container .section_description{
+    margin-bottom: 2rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.contact_container form{
+    display: grid;
+    gap: 1rem;
+}
+
+.contact_container :is(input,textarea){
+    padding: 1rem 0.75rem;
+    outline: none;
+    border: 1px solid var(--extra-light);
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-dark);
+    border-radius: 5px;
+}
+
+.contact_container .btn{
+    max-width: fit-content;
+    margin-inline: auto;
+}
+
 @media (width > 540px) {
     .stats_container {
         flex-direction: row;
