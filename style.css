@@ -504,6 +504,7 @@ nav {
     .skill_card:nth-child(3) {
         grid-area: 3/1/5/2;
     }
+    .co
 }
 
 @media (width > 768px) {

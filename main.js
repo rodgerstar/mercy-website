@@ -73,8 +73,7 @@ portfoliocontent.forEach((item) => {
     duplicateNode.setAttribute("aria-hidden", true);
     portfolio.appendChild(duplicateNode);
 });
-
 const swiper = new Swiper(".swiper", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
-})
+  slidesPerView: "auto",
+  spaceBetween: 20,
+});
